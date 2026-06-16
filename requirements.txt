@@ -1,5 +1,6 @@
 gradio==4.44.0
-huggingface_hub==0.24.6
+gradio-client==1.3.0
+huggingface-hub==0.24.6
 transformers
 torch
 pydub
