@@ -62,4 +62,4 @@ with gr.Blocks(theme=gr.themes.Soft(), title="MedSigLIP Clinical Hub") as demo:
 
 # 4. Launch configuration
 if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=7860)
+    demo.launch(server_name="0.0.0.0", server_port=7860, share=True)
