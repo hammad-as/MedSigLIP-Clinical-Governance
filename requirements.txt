@@ -1,5 +1,5 @@
-gradio>=4.0.0
-huggingface_hub>=0.20.0
+gradio==4.44.0
+huggingface_hub==0.24.6
 transformers
 torch
 pydub
