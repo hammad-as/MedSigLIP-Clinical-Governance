@@ -45,17 +45,16 @@ with gr.Blocks(theme=gr.themes.Soft(), title="MedSigLIP Clinical Hub") as demo:
             with gr.Row():
                 gov_out = gr.Markdown(label="Governance Status")
                 drift_out = gr.Label(label="Embedding Stability Index")
-    
-    # 3. Explainability & Education Tabs
-    with gr.Tabs():
-        with gr.Tab("Clinical Methodology"):
-            gr.Markdown("MedSigLIP utilizes zero-shot vision-language alignment to provide diagnostic support.")
-            
-        with gr.Tab("Governance Framework"):
-            gr.Markdown("Real-time monitoring of embedding drift ensures diagnostic consistency.")
-            
 
-    btn.click(medical_diagnostic_pipeline, inputs=[img_input, sensitivity], outputs=[diag_out, conf_out, gov_out, drift_out])
+# 3. Explainability & Education Tabs
+with gr.Tabs():
+    with gr.Tab("Clinical Methodology"):
+        gr.Markdown("MedSigLIP utilizes zero-shot vision-language alignment to provide diagnostic support.")
+        
+    with gr.Tab("Governance Framework"):
+        gr.Markdown("Real-time monitoring of embedding drift ensures diagnostic consistency.")
+
+btn.click(medical_diagnostic_pipeline, inputs=[img_input, sensitivity], outputs=[diag_out, conf_out, gov_out, drift_out])
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(server_name="0.0.0.0", server_port=7860)
