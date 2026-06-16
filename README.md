@@ -1,3 +1,14 @@
+---
+title: MedSigLIP
+emoji: 🏥
+colorFrom: blue
+colorTo: indigo
+sdk: gradio
+sdk_version: "4.44.0"
+app_file: app.py
+pinned: false
+---
+
 # MedSigLIP: Clinical Diagnostic & Governance Hub
 
 A zero-shot, multi-modal clinical diagnostic dashboard for dermatological triage.
